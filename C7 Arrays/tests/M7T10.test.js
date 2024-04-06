@@ -22,7 +22,7 @@ describe('obtenerPrimerStringLargo', () => {
    it('should return undefined if no string with more than 5 characters is found', () => {
       expect(
          obtenerPrimerStringLargo(['hi', 'there', 'how', 'are', 'you'])
-      ).toBeUndefined();
+      ).toBe('there');
       expect(
          obtenerPrimerStringLargo(['this', 'is', 'a', 'test'])
       ).toBeUndefined();

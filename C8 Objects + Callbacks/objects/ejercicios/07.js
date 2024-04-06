@@ -7,6 +7,20 @@ function sort(sortBy, list) {
    // recibes --> ("a", [{ a: 1, b: 3 }, { a: 3, b: 2 }, { a: 2, b: 40 }])
    // retorna --> [{ a: 3, b: 2 }, { a: 2, b: 40 }, { a: 1, b: 3 }]
    // Tu código:
+
+   return list.sort((a, b) => {
+      if (a[sortBy] < b[sortBy]) {
+          return 1; // Si a es menor que b, se coloca a después de b (descendente)
+      } else if (a[sortBy] > b[sortBy]) {
+          return -1; // Si a es mayor que b, se coloca a antes de b (descendente)
+      } else {
+          return 0; // Si son iguales, no hay cambio en el orden
+      }
+  });
+
+
 }
+
+console.log (sort("a", [{ a: 1, b: 3 }, { a: 3, b: 2 }, { a: 2, b: 40 }]))
 
 module.exports = sort;

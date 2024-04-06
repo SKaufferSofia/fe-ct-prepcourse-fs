@@ -5,5 +5,5 @@ test('Debe agregar el nuevo amigo al final del arreglo de una propiedad', functi
     amigos: ['Ben', 'Austen', 'Ryan', 'Mike', 'Young'],
   };
   const newFriend = 'Shay';
-  expect(agregarAmigo(user, 'Shay').amigos.pop()).toBe('Shay');
+  expect(agregarAmigo(user, newFriend).amigos.pop()).toBe('Shay');
 });

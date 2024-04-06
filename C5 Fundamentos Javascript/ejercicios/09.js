@@ -3,6 +3,14 @@ function esNuloOIndefinido(valor) {
   // Si este valor es null o undefined, retorna true.
   // De lo contrario, retorna false.
   // Tu código:
+  if (valor === null) {
+    return true
+  } else if (valor === undefined) {
+    return true
+  } else {
+    return false
+  }
+// el ejercicio se puede hacer sin las llaves 
 }
 
 module.exports = esNuloOIndefinido;
